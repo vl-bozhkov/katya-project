@@ -1,0 +1,78 @@
+//customize colors
+$theme-colors: (
+  'primary': #fda403,
+  'secondary': #e8751a
+);
+//import bootstrap
+@import '../bootstrap/scss/bootstrap.scss';
+
+#showcase {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('https://images.unsplash.com/photo-1470072508653-1be229b63562?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80')
+      bottom center/cover no-repeat;
+  min-height: 700px;
+}
+
+@media (max-width: 768px) {
+  #showcase {
+    min-height: 450px;
+  }
+}
+
+.fixed-bottom {
+  position: fixed;
+  right: 4%;
+  bottom: 4%;
+  z-index: $zindex-fixed;
+}
+
+section {
+  padding: 100px 0;
+}
+.map-container {
+  overflow: hidden;
+  // padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.map-container iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.btn-custom {
+  color: green;
+}
+.btn-custom:hover {
+  cursor: pointer;
+}
+.custom-pos {
+  color: green;
+}
+.custom-about-img {
+}
+p {
+  // font-size: 3em;
+}
+
+// FIXED BUTTON
+.whatsapp-btn {
+  color: #075e54;
+}
+// SOCIAL LINKS
+.whatsapp-btn:hover {
+  color: #0b8d7e !important;
+}
+
+.facebook-btn:hover {
+  color: #3b5998;
+}
+
+.instagram-btn:hover {
+  color: #8a3ab9;
+}
+.youtube-btn:hover {
+  color: #c4302b;
+}
