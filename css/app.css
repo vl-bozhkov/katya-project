@@ -7584,12 +7584,22 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 #showcase {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://images.unsplash.com/photo-1470072508653-1be229b63562?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") bottom center/cover no-repeat;
-  min-height: 700px; }
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/makeup-img-6.jpg");
+  min-height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: 75% 75%; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem; }
 
 @media (max-width: 768px) {
-  #showcase {
-    min-height: 450px; } }
+  .img-custom {
+    height: 400px !important; } }
+@media (max-width: 576px) {
+  .img-custom {
+    height: 300px !important; } }
 .fixed-bottom {
   position: fixed;
   right: 4%;
@@ -7597,7 +7607,7 @@ a.text-dark:hover, a.text-dark:focus {
   z-index: 1030; }
 
 section {
-  padding: 100px 0; }
+  padding: 50px 0; }
 
 .map-container {
   overflow: hidden;
@@ -7620,6 +7630,9 @@ section {
 .custom-pos {
   color: green; }
 
+.footer-text {
+  font-size: 0.8em; }
+
 .whatsapp-btn {
   color: #075e54; }
 
@@ -7634,5 +7647,23 @@ section {
 
 .youtube-btn:hover {
   color: #c4302b; }
+
+.img-custom {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 450px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.img-custom-2 {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 300px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 /*# sourceMappingURL=app.css.map */
